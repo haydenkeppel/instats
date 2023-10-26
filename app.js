@@ -2,7 +2,7 @@ function onPageLoad() {
     // get display name n that
     const DATA_PROFILE = JSON.parse(localStorage.getItem("DATA_PROFILE"));
     document.getElementById("display-name").innerText = DATA_PROFILE.display_name;
-    displayData(10, "short");
+    // displayData(10, "short");
     optionChange();
 }
 
