@@ -32,15 +32,18 @@
     ?>
     
     <div class="options">
-        <select name="time_range" id="time_range_selector" onchange="optionChange()" onclick="optionChange()" onfocus="optionChange()">
-            <option value="short">4 Weeks</option>
-            <option value="medium">6 Months</option>
-            <option value="long">All Time</option>
-        </select>
-        <select name="amount" id="amount_selector" onchange="optionChange()" onclick="optionChange()" onfocus="optionChange()">
-            <option value="10">Top 10</option>
-            <option value="50">Top 50</option>
-        </select>
+        <form action="stats" method="get">
+            <select name="time_range" id="time_range_selector">
+                <option value="short">4 Weeks</option>
+                <option value="medium">6 Months</option>
+                <option value="long">All Time</option>
+            </select>
+            <select name="amount" id="amount_selector">
+                <option value="10">Top 10</option>
+                <option value="50">Top 50</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     <!-- DISPLAY -->
