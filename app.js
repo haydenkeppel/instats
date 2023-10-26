@@ -72,7 +72,7 @@ function displayData(num, term) {
 
 function optionChange() {
     let params = new URLSearchParams(document.location.search);
-    if(params == undefined) {
+    if(params == "") {
         console.log("NO PARAMS");
         return;
     }
