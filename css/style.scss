@@ -46,8 +46,13 @@ h1,h2,h3 {
     font-family: var(--ff-heading);
 }
 
+@media screen {
+    .display {
+        aspect-ratio: 9/16;
+    }
+}
+
 .display {
-    // aspect-ratio: 9/16;
     min-height: calc(1.78 * var(--display-width));
     background-color: var(--clr-neutral-900);
     color: var(--clr-neutral-100);
