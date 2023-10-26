@@ -32,7 +32,7 @@
     ?>
     
     <div class="options">
-        <form action="stats" method="get">
+        <form onsubmit="optionChange(event)">
             <select name="time_range" id="time_range_selector">
                 <option value="short">4 Weeks</option>
                 <option value="medium">6 Months</option>
