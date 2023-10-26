@@ -70,13 +70,15 @@ function displayData(num, term) {
 }
 
 
-function optionChange() {
-    let params = new URLSearchParams(document.location.search);
-    if(params == "") {return};
-    let time_range = params.get("time_range");
-    let amount = parseInt(params.get("amount"));
-    console.log(time_range, amount);
-    // let time_range = document.getElementById("time_range_selector").value;
-    // let amount = document.getElementById("amount_selector").value;
+function optionChange(event) {
+    event.preventDefault();
+
+    // let params = new URLSearchParams(document.location.search);
+    // if(params == "") {return};
+    // let time_range = params.get("time_range");
+    // let amount = parseInt(params.get("amount"));
+    // console.log(time_range, amount);
+    let time_range = document.getElementById("time_range_selector").value;
+    let amount = document.getElementById("amount_selector").value;
     displayData(amount, time_range);
 }
