@@ -40,6 +40,7 @@ h1, h2, h3 {
 }
 
 .display {
+  position: relative;
   aspect-ratio: 9/16;
   background-color: var(--clr-neutral-900);
   color: var(--clr-neutral-100);
@@ -168,6 +169,9 @@ h1, h2, h3 {
 }
 
 .footer-section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: grid;
   padding: 0.25rem var(--padding-inline) 0.75rem;
   font-weight: var(--fw-semi-bold);
