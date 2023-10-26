@@ -168,6 +168,10 @@ h1, h2, h3 {
   float: right;
 }
 
+.dms-list li:last-child {
+  margin-bottom: 3em;
+}
+
 .footer-section {
   position: absolute;
   bottom: 0;
