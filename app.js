@@ -2,7 +2,7 @@ function onPageLoad() {
     // get display name n that
     const DATA_PROFILE = JSON.parse(localStorage.getItem("DATA_PROFILE"));
     document.getElementById("display-name").innerText = DATA_PROFILE.display_name;
-    displayData(10, 'short');
+    optionChange();
 }
 
 function displayData(num, term) {
@@ -70,7 +70,11 @@ function displayData(num, term) {
 
 
 function optionChange() {
-    let time_range = document.getElementById("time_range_selector").value;
-    let amount = document.getElementById("amount_selector").value;
+    let params = new URLSearchParams(document.location.search);
+    let time_range = params.get("time_range");
+    let amount = parseInt(params.get("amount"));
+    console.log(time_range, amount);
+    // let time_range = document.getElementById("time_range_selector").value;
+    // let amount = document.getElementById("amount_selector").value;
     displayData(amount, time_range);
 }
