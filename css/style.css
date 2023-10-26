@@ -19,6 +19,7 @@
   --fs-700: 3.25rem;
   --padding-inline: 1rem;
   --display-width: min(95vw, 485px);
+  font-size: min(16px, 2vw);
 }
 
 *, *::before, *::after {
