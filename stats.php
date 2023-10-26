@@ -9,7 +9,6 @@
     <title>Instats</title> <!--Title of page (First half then second half) (Tab name)-->
     <link rel="stylesheet" type="text/css" href="css/style.css" /> <!--Stylesheet Link-->
     <script src="https://kit.fontawesome.com/a4f3d1faa5.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 </head>
 <body onload="onPageLoad()">
     <?php 
@@ -94,6 +93,7 @@
         </div>
     </div>
 
+    <script src="app.js"></script>
     <script>
             localStorage.setItem('DATA_PROFILE', `<?php echo $DATA_PROFILE ?>`);
             localStorage.setItem('DATA_TOP10_TRACKS_long_term', `<?php echo $DATA_TOP10_TRACKS_long_term ?>`);
