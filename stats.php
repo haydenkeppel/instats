@@ -73,18 +73,20 @@
         </div>
         <ul class="dms-list" id="dms-list">
             <!-- CONTENT GOES HERE -->
-        <div class="left">
-            <div class="profile-photo">
-                <img class="profile-img" id="profile-image" src="assets/empty-pfp.jpg">
-            </div>
-            <div class="message">
-                <p class="artist" id="artist">Instats</p>
-                <p><span class="song" id="song">Wait here to get your results!</span><span class="rank">&nbsp;⋅&nbsp;1m</span></p>
-            </div>
-        </div>
-        <div class="right">
-            <img src="assets/camera-white.svg">
-        </div>
+            <li class="dm">
+                <div class="left">
+                    <div class="profile-photo">
+                        <img class="profile-img" id="profile-image" src="assets/empty-pfp.jpg">
+                    </div>
+                    <div class="message">
+                        <p class="artist" id="artist">Instats</p>
+                        <p><span class="song" id="song">Wait here to get your results!</span><span class="rank">&nbsp;⋅&nbsp;1m</span></p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/camera-white.svg">
+                </div>
+            </li>
         </ul>
         <div class="footer-section">
             <span>To view your spotify stats, visit:</span>
