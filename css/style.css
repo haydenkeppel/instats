@@ -1,0 +1,180 @@
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 85%);
+  --clr-neutral-200-alpha: 0 0% 85%;
+  --clr-neutral-300: hsl(0, 0%, 75%);
+  --clr-neutral-800: hsl(0, 0%, 15%);
+  --clr-neutral-900: hsl(0, 0%, 0%);
+  --clr-primary-400: dodgerblue;
+  --ff-heading: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --ff-body: system-ui;
+  --fw-regular: 300;
+  --fw-semi-bold: 400;
+  --fw-bold: 700;
+  --fs-200: 0.625rem;
+  --fs-300: 0.75;
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.125rem;
+  --fs-700: 3.25rem;
+  --padding-inline: 1rem;
+  --display-width: min(95vw, 485px);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-body);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-heading);
+}
+
+.display {
+  aspect-ratio: 9/16;
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+  width: var(--display-width);
+  margin: 3rem auto;
+  overflow-y: auto;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-neutral-900);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem var(--padding-inline);
+  font-size: var(--fs-500);
+  border-bottom: 1px solid hsl(var(--clr-neutral-200-alpha)/0.5);
+}
+.nav-bar .left {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.nav-bar img {
+  height: 1.5em;
+  height: 1lh;
+}
+
+.display-name {
+  position: relative;
+  font-size: var(--fs-600);
+  vertical-align: middle;
+  display: inline-block;
+}
+.display-name::after {
+  position: absolute;
+  content: url("../assets/chevron-down-white.svg");
+  height: 20px;
+}
+
+.search-section {
+  padding: 0.5rem var(--padding-inline);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1em;
+  padding: 0.25rem 0.375rem;
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-300);
+  background-color: var(--clr-neutral-800);
+  border-radius: 0.5rem;
+  vertical-align: middle;
+}
+.search-bar .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.search-bar img {
+  height: 1.5em;
+  height: 1lh;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem var(--padding-inline);
+}
+.top-bar .messages {
+  font-weight: var(--fw-bold);
+}
+.top-bar .requests {
+  color: var(--clr-primary-400);
+}
+
+.dms-list {
+  list-style: none;
+  padding: 0.5rem var(--padding-inline);
+}
+
+.dm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+.dm .profile-img {
+  height: 3.75em;
+  height: 2.5lh;
+  border-radius: 100%;
+  border: 0.25px solid hsl(var(--clr-neutral-200-alpha)/0.5);
+}
+.dm .message {
+  font-size: var(--fs-400);
+}
+.dm .message :last-child {
+  display: flex;
+  align-items: center;
+}
+.dm .message .artist {
+  font-weight: var(--fw-bold);
+}
+.dm .message .song {
+  color: var(--clr-neutral-200);
+  max-width: calc(var(--display-width) - 12.5rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.dm .message .rank {
+  color: var(--clr-neutral-200);
+}
+.dm .left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dm .right {
+  float: right;
+}
+
+.footer-section {
+  display: grid;
+  padding: 0.25rem var(--padding-inline) 0.75rem;
+  font-weight: var(--fw-semi-bold);
+  border-top: 1px solid hsl(var(--clr-neutral-200-alpha)/0.5);
+  text-align: center;
+}
+.footer-section a {
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-regular);
+}/*# sourceMappingURL=style.css.map */
